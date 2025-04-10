@@ -118,5 +118,12 @@ function animateHeader() {
   header.style.color = "blue";
 }
 </script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+  let email = document.querySelector("#email").value;
+  if (!email.includes("@")) {
+    alert("Please enter a valid email address.");
+    e.preventDefault(); // Prevent form submission
+  }
+}); 
   </body> 
 </html>
