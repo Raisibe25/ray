@@ -139,6 +139,7 @@ function toggleAccordion() {
   accordion.style.display = accordion.style.display === "none" ? "block" : "none";
 }
 </script>
+   <script>
    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -147,5 +148,6 @@ function toggleAccordion() {
     });
   });
 });
+    </script>
   </body> 
 </html>
