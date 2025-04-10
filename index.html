@@ -89,5 +89,13 @@ text-align: center;
     <a href="https://1drv.ms/w/c/29370c6ebafda94e/EbFsP8PKUXhAgkzwCzmZPVYBEIclY0OjbTTDiz1MJ5wXJg"> This links to my cv. </a>
     </p>
    <script src "index.js"></script>
+   <p id="clock"></p>
+<script>
+function updateClock() {
+  let now = new Date();
+  document.getElementById("clock").textContent = now.toLocaleTimeString();
+}
+setInterval(updateClock, 1000);
+</script>
   </body> 
 </html>
