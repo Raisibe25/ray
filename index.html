@@ -45,7 +45,7 @@ text-align: center;
     <title>Raisibe's Portfolio</title>
   </head> 
   <body>
-    <h1 style=" color: red;">Welcome To My World</h1> 
+    <h1 style=" color: red;" id="header">Welcome To My World</h1> 
     <h2 style="color: blue;">Meet Me</h2>
    <img class="smaller-image thin-red-border circular-image" src= "IMG_20240827_173449.jpg" alt=" Photo of me" style="display: block; margin: 0 auto;">
     <p>
@@ -110,7 +110,6 @@ function toggleMode() {
 }
 </style>
    <button onclick="animateHeader()">Click Me</button>
-<h1 id="header">Welcome to My World</h1>
 <script>
 function animateHeader() {
   let header = document.getElementById("header");
@@ -118,12 +117,5 @@ function animateHeader() {
   header.style.color = "blue";
 }
 </script>
-  document.querySelector("form").addEventListener("submit", function(e) {
-  let email = document.querySelector("#email").value;
-  if (!email.includes("@")) {
-    alert("Please enter a valid email address.");
-    e.preventDefault(); // Prevent form submission
-  }
-}); 
   </body> 
 </html>
