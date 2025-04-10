@@ -109,5 +109,14 @@ function toggleMode() {
   color: white;
 }
 </style>
+   <button onclick="animateHeader()">Click Me</button>
+<h1 id="header">Welcome to My World</h1>
+<script>
+function animateHeader() {
+  let header = document.getElementById("header");
+  header.style.transition = "color 0.5s ease";
+  header.style.color = "blue";
+}
+</script>
   </body> 
 </html>
