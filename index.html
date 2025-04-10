@@ -127,7 +127,25 @@ function animateHeader() {
      <p>
     <a href="https://1drv.ms/w/c/29370c6ebafda94e/EbFsP8PKUXhAgkzwCzmZPVYBEIclY0OjbTTDiz1MJ5wXJg"> This links to my cv. </a>
     </p>
-   <script src "index.js"></script>
-   
+   <div>
+  <button onclick="toggleAccordion()">Click to Expand</button>
+  <div id="accordion" style="display: none;">
+    <p>This is detailed information...</p>
+  </div>
+</div>
+<script>
+function toggleAccordion() {
+  let accordion = document.getElementById("accordion");
+  accordion.style.display = accordion.style.display === "none" ? "block" : "none";
+}
+</script>
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
   </body> 
 </html>
